@@ -10,6 +10,13 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+img.fiting{
+  width: 50px; 
+  min-height: 50px;
+  margin: 10px;
+}
+
 body {
   margin: 0;
 }
