@@ -1,2 +1,0 @@
-# Tecnoxpetise
-Desarrollo proyecto PHP 
