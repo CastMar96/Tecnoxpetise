@@ -81,10 +81,10 @@ class Product
 			$sql = "UPDATE product SET 
 						productName          = ?, 
 						description        = ?,
-                        price        = ?,
+                        price       		 = ?,
 						category            = ?, 
-						stock = ?,
-                        image = ?
+						stock 				= ?,
+                        image				 = ?
 				    WHERE productId = ?";
 
 			$this->pdo->prepare($sql)

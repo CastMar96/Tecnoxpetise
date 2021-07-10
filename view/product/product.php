@@ -27,10 +27,10 @@
             <td><?php echo $r->stock; ?></td>
             <td><img class="img.fiting" src="/Tecnoxpetise/image/<?php echo $r->image;?>"></td>
             <td>
-                <a href="?c=Product&a=Crud&id=<?php echo $r->productId;?>">Edit</a>
+                <a href="?c=Product&a=Crud&productId=<?php echo $r->productId;?>">Edit</a>
             </td>
             <td>
-                <a onclick="javascript:return confirm('¿Do you want to delete this product?');" href="?c=Product&a=Eliminar&id=<?php echo $r->productId; ?>">Eliminar</a>
+                <a onclick="javascript:return confirm('¿Do you want to delete this product?');" href="?c=Product&a=Eliminar&productId=<?php echo $r->productId; ?>">Eliminar</a>
             </td>
         </tr>
     <?php endforeach; ?>
