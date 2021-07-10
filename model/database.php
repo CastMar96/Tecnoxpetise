@@ -1,27 +1,11 @@
-  
 <?php
-require_once 'model/database.php';
-
-$controller = 'product';
-
-// Todo esta lógica hara el papel de un FrontController
-if(!isset($_REQUEST['c']))  // TRUE=FALSE  , FALSE=TRUE
-{   echo "AQUI ESTOY TRUE";
-    require_once "controller/$controller.controller.php";
-    $controller = ucwords($controller).'Controller';
-    $controller = new $controller;
-    $controller->Index();    
-}
-else
-{  echo "AQUI ESTOY FALSE";
-    // Obtenemos el controlador que queremos cargar
-    $controller = strtolower($_REQUEST['c']);
-    //$resultado = $condicion            ? 'verdadero'    : 'falso';
-    $accion =      isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';    
-    // Instanciamos el controlador
-    require_once "controller/$controller.controller.php";
-    $controller = ucwords($controller).'Controller';
-    $controller = new $controller;    
-    // Llama la accion
-    call_user_func( array( $controller, $accion ) );
+class Database
+{
+    public static function StartUp()
+    {
+        //cambiar nombre de base de datos al nombre de la de ecommerce
+        $pdo = new PDO('mysql:host=localhost;dbname=colegio;charset=utf8','root','castellanos');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
+        return $pdo;
+    }
 }
