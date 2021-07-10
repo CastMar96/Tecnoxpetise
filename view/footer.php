@@ -1,8 +1,8 @@
-            <div class="row">
+<div class="row">
                 <div class="col-xs-12">
                     <hr />
                     <footer class="text-center well">
-                        <p>Ejemplo desarrollado por <a href="#">EL PROFE</a></p>
+                        <p>Ecomerce: <a href="#">Tecnoxpetisse</a></p>
                     </footer>                
                 </div>    
             </div>

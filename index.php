@@ -1,11 +1,11 @@
 <?php
 require_once 'model/database.php';
 
-$controller = 'product';
+$controller = 'user';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))  // TRUE=FALSE  , FALSE=TRUE
-{   echo "AQUI ESTOY TRUE";
+{   //echo "AQUI ESTOY TRUE";
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller).'Controller';
     $controller = new $controller;
