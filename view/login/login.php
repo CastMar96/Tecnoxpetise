@@ -17,6 +17,7 @@
                 <div class="form-group">
                   <label for="password" class="sr-only">Password</label>
                   <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                  <input type="checkbox" onclick="myFunction()">Show Password
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 col-lg-12">
@@ -30,4 +31,15 @@
       </div>
     </main>
   </body>
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
   </html>

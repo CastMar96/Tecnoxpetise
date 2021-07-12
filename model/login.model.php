@@ -39,15 +39,16 @@ class Login
 		{
 			$u=$_REQUEST['user'];
 			$p=$_REQUEST['password'];
+			$encriptarPassword=crypt($p,'$1$tecnoxp$');
 			$stm = $this->pdo
 			->prepare("SELECT * FROM user WHERE user = :u AND password=:p");
 			$stm->bindParam(":u",$u);
-			$stm->bindParam(":p",$p);
+			$stm->bindParam(":p",$encriptarPassword);
 			$stm->execute();
 			$usuario=$stm->fetch(PDO::FETCH_ASSOC);
 			if(isset($usuario['user'])&&isset($usuario['password']))
 			{
-				if($_REQUEST['user']==$usuario['user']&&$_REQUEST['password']==$usuario['password'])
+				if($_REQUEST['user']==$usuario['user']&&$encriptarPassword==$usuario['password'])
 				return 'login';
 			}
 			else{
