@@ -25,7 +25,7 @@
             <td><?php echo $r->price; ?></td>
             <td><?php echo $r->category; ?></td>
             <td><?php echo $r->stock; ?></td>
-            <td><img width="60" height="70" src="/Tecnoxpetise/image/<?php echo $r->image;?>"></td>
+            <td><img width="90" height="85" src="image\products\ <?php echo $r->image;?>"></td>
             <td>
                 <a href="?c=Product&a=Crud&productId=<?php echo $r->productId;?>">Edit</a>
             </td>
