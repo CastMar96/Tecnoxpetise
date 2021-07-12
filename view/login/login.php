@@ -10,13 +10,13 @@
               <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 mt-4">
                 <div class="form-group">
                   <label for="user" class="sr-only">user </label>
-                  <input type="user" id="user" class="form-control" placeholder="user" name="user" required autofocus>
+                  <input type="user" id="user" class="form-control" placeholder="Username" name="user" required autofocus>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 col-lg-12">
                 <div class="form-group">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" name="password" id="password" class="form-control" placeholder="password" required>
+                  <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 col-lg-12">
