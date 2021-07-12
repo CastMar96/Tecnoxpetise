@@ -1,6 +1,26 @@
-/* Imports */
-@import url(http://fonts.googleapis.com/css?family=Oswald:300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-.has-error small{color:red;font-weight:normal;margin-left:5px;}
-#jumbotron-index{margin-top:50px;background:#666;color:#eee;}
+.card-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #c5c5c5;
+    margin-bottom: 30px;
+    float: left;
+    border-radius: 10px;
+}
+.card-box .card-thumbnail {
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s;
+}
+.card-box .card-thumbnail:hover {
+    transform: scale(1.2);
+}
+.card-box h3 a {
+    font-size: 20px;
+    text-decoration: none;
+}  
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+ }

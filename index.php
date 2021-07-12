@@ -1,7 +1,7 @@
 <?php
 require_once 'model/database.php';
 
-$controller = 'user';
+$controller = 'login';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))  // TRUE=FALSE  , FALSE=TRUE
@@ -12,7 +12,8 @@ if(!isset($_REQUEST['c']))  // TRUE=FALSE  , FALSE=TRUE
     $controller->Index();    
 }
 else
-{  echo "AQUI ESTOY FALSE";
+{  
+    //echo "AQUI ESTOY FALSE";
     // Obtenemos el controlador que queremos cargar
     $controller = strtolower($_REQUEST['c']);
     //$resultado = $condicion            ? 'verdadero'    : 'falso';

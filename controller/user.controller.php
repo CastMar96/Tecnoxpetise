@@ -42,11 +42,11 @@ class UserController{
             ? $this->model->Update($tea)
             : $this->model->Register($tea);
         
-        header('Location: index.php');
+        header('Location: index.php?c=user');
     }
 
     public function Delete(){
         $this->model->Delete($_REQUEST['id']);
-        header('Location:index.php');
+        header('Location:index.php?c=user');
     }
 }
