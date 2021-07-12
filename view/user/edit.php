@@ -27,7 +27,11 @@
 
     <div class="form-group">
         <label>User Type</label>
-        <input  type="text" name="type" value="<?php echo $tea->type; ?>" class="form-control" placeholder="Enter your type" data-validacion-tipo="requerido" />
+        <select class="form-select" aria-label="Default select example" id="type" name="type" >|
+        <option value="<?php echo $tea->type;?>" hidden><?php echo $tea->type;?></option>
+         <option value="User">User</option>
+         <option value="Admin">Admin</option>
+        </select>
     </div>
 
     <div class="form-group">
