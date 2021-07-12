@@ -24,7 +24,7 @@
     
     <div class="form-group">
         <label>Category</label>
-        <select id="category" name="category" >|
+        <select class="form-select" aria-label="Default select example" id="category" name="category" >|
         <option value="<?php echo $pdt->category;?>" hidden><?php echo $pdt->category;?></option>
          <option value="Computers">Computers</option>
          <option value="Phones">Phones</option>

@@ -1,7 +1,7 @@
 <h1 class="page-header text-center">User</h1>
 
 <div class="well well-sm text-right">
-    <h4 class="btn btn-primary btn-lg " href="?c=User&a=Crud">New User</h4>
+<a class="btn btn-primary btn-lg" href="?c=User&a=Crud">New User</a>
 </div>
 
 <table class="table table-striped">
