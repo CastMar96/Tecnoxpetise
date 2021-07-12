@@ -30,10 +30,12 @@ class UserController{
     public function Load(){
         $tea = new User();
         
+        $encriptarPassword=crypt($_REQUEST['password'],'$1$tecnoxp$');
+
         $tea->id = $_REQUEST['id'];
         $tea->name = $_REQUEST['name'];
         $tea->user = $_REQUEST['user'];
-        $tea->password = $_REQUEST['password'];
+        $tea->password = $encriptarPassword;
         $tea->type = $_REQUEST['type'];
         $tea->address = $_REQUEST['address'];
         $tea->phone = $_REQUEST['phone'];
