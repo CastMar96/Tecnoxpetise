@@ -3,13 +3,13 @@ class User
 {
 	private $pdo;
 	
-		public $id;
-		public $name;
-		public $user;
-		public $password;
-		public $type;
-		public $address;
-        public $phone;
+	public $id;
+	public $name;
+	public $user;
+	public $password;
+	public $type;
+	public $address;
+	public $phone;
 
 	
 	public function __CONSTRUCT()
@@ -39,23 +39,23 @@ class User
 		}
 	}
 
+
 	public function Register(user $data)
 	{
 		try 
 		{
-		$sql = "INSERT INTO user (nombre,user,password,type,address,phone) 
+		$sql = "INSERT INTO user (name,user,password,type,address,phone) 
 		        VALUES (?, ?, ?, ?, ?,?)";
 
 		$this->pdo->prepare($sql)
 		     ->execute(
 				array(
-                    $data->nombre,
+                    $data->name,
                     $data->user,  	
                     $data->password,
                     $data->type,
 					$data->address,
                     $data->phone
-
                 )
 			);
 		} catch (Exception $e) 
@@ -69,7 +69,7 @@ class User
 		try 
 		{
 			$sql = "UPDATE user SET 
-						nombre         = ?, 
+						name         = ?, 
 						user       = ?,
                         password        = ?,
 						type           = ?, 
@@ -80,7 +80,7 @@ class User
 			$this->pdo->prepare($sql)
 			     ->execute(
 				    array(
-                        $data->nombre,
+                        $data->name,
                         $data->user,  	
                         $data->password,
                         $data->type,

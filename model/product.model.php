@@ -1,8 +1,6 @@
 <?php
 class Product
 {
-
-
 	private $pdo;
     
     public $productId;
@@ -12,7 +10,6 @@ class Product
     public $category;
     public $stock;
     public $image;
-
 
 	public function __CONSTRUCT()
 	{
@@ -26,7 +23,7 @@ class Product
 		}
 	}
 
-	public function Listar()
+	public function List()
 	{
 		try
 		{
@@ -43,7 +40,7 @@ class Product
 		}
 	}
 
-	public function Obtener($id)
+	public function getID($id)
 	{
 		try 
 		{
@@ -59,7 +56,7 @@ class Product
 		}
 	}
 
-	public function Eliminar($id)
+	public function Delete($id)
 	{
 		try 
 		{
@@ -72,31 +69,54 @@ class Product
 			die($e->getMessage());
 		}
 	}
-
-	public function Actualizar($data)
+	public function Register(Product $data)
 	{
 		try 
 		{
 
-			$sql = "UPDATE product SET 
-						productName          = ?, 
-						description        = ?,
-                        price       		 = ?,
-						category            = ?, 
-						stock 				= ?,
-                        image				 = ?
-				    WHERE productId = ?";
+		$sql = "INSERT INTO product (productName,description,price,category,stock,image) 
+		        VALUES (?, ?, ?, ?, ?,?)";
 
-			$this->pdo->prepare($sql)
-			     ->execute(
-				    array(
-                        $data->productName, 
-                        $data->description,
-						$data->price,
-                        $data->category,
-                        $data->stock,
-                        $data->image,
-                        $data->productId
+				
+		$this->pdo->prepare($sql)
+		     ->execute(
+				array(
+                    $data->productName,
+                    $data->description,  	
+                    $data->price,
+                    $data->category,
+					$data->stock,
+					$data->image
+                )
+			);
+		} catch (Exception $e) 
+		{
+			die($e->getMessage());
+		}
+	}
+	public function Update($data)
+	{
+		try 
+		{
+			$sql = "UPDATE product SET 
+			productName          = ?, 
+			description        = ?,
+			price       		 = ?,
+			category            = ?, 
+			stock 				= ?,
+			image				 = ?
+		WHERE productId = ?";
+
+$this->pdo->prepare($sql)
+	 ->execute(
+		array(
+			$data->productName, 
+			$data->description,
+									$data->price,
+			$data->category,
+			$data->stock,
+			$data->image,
+			$data->productId
 					)
 				);
 		} catch (Exception $e) 
