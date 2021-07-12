@@ -5,6 +5,13 @@ Proyecto PHP 2021
 Desarrollo de proyecto de catedra para la asignatura de PHP
 
 
+## Integrantes 👩 
+
+* **Marleny Guadalupe Mejía Sosa** - **MS132476**
+
+* **Andrea Alejandra Castellanos Martínez** - **CM150518**
+
+
 ## LICENCIAS CREATIVE COMMONS 📄
 **Usted es libre de:**
 * **Compartir:** copiar y redistribuir el material en cualquier medio o formato
@@ -19,9 +26,10 @@ Desarrollo de proyecto de catedra para la asignatura de PHP
 *	No tiene que cumplir con la licencia para elementos del material en el dominio público o cuando su uso esté permitido por una excepción o limitación aplicable.
 *	No se dan garantías. La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como publicidad, privacidad, o derechos morales pueden limitar la forma en que utilice el material.
 
-
-## Integrantes 👩 
-
-* **Marleny Guadalupe Mejía Sosa** - **MS132476**
-
-* **Andrea Alejandra Castellanos Martínez** - **CM150518**
+## Enlaces de interés 👇
+* [Tablero en Trello] - https://trello.com/b/7lfoMDYL/tecnoxpetice
+* [Manual de usuario] - https://www.canva.com/design/DAEj9j93NcI/-eymM7WlIwPR2qfm4SGXPg/view?utm_content=DAEj9j93NcI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+* [Enlaces Mockups]                                                                                                                           
+   https://www.figma.com/file/PSBiq4INbJQi1U9KF1AxpB/EcommercePHP?node-id=0%3A1
+   https://www.figma.com/file/PSBiq4INbJQi1U9KF1AxpB/EcommercePHP?node-id=6%3A59
+   https://www.figma.com/file/PSBiq4INbJQi1U9KF1AxpB/EcommercePHP?node-id=3%3A132
